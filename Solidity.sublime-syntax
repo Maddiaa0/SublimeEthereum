@@ -5,8 +5,8 @@ file_extensions: [sol]
 scope: source.solidity
 
 variables:
-  identifier: '(?:[A-Za-z_]\w*)'
-  identifier_path: '(?:[A-Za-z_][\w\.]*)' # ex.: A.MyStruct
+  identifier: '(?:[A-Za-z_$][\w$]*)'
+  identifier_path: '(?:[A-Za-z_$][\w\.$]*)' # ex.: A.MyStruct
   # Updated number literal to allow underscores (e.g. 1_000_000)
   number: '(?:[+-]?(?:(?:\d(?:_?\d)*\.?\d(?:_?\d)*)|\.\d(?:_?\d)*)(?:[eE][+-]?\d(?:_?\d)*)?)'
   # Updated hex literal to require at least one hex digit
